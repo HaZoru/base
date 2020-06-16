@@ -60,7 +60,7 @@ i {
 .col-lg.overlay {
     background: #2625ff;
     position: absolute;
-    top: -108%;
+    top: -100%;
 }
 
 ul {
