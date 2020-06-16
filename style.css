@@ -59,7 +59,7 @@ i {
 
 .col-lg.overlay {
     background: #2625ff;
-    position: absolute;
+    position: fixed;
     top: -100%;
 }
 
