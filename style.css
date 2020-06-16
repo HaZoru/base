@@ -9,7 +9,9 @@ html, body {
     font-family: Athene;
     src: url(Athene.otf);
   }
-
+p::selection{
+    background-color:#2625ff ;
+}
 body {
     background-color: #131313;
     color: #fff;
