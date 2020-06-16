@@ -55,12 +55,14 @@ i {
 .col-lg {
     height: 100vh;
     backface-visibility: hidden;
+		z-index: 20;
 }
 
 .col-lg.overlay {
     background: #2625ff;
     position: fixed;
     top: -100%;
+		z-index: 20;
 }
 
 ul {
