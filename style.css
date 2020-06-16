@@ -1,0 +1,303 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   height: 100%;
+}
+
+body {
+    background-color: #131313;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: url("cursor.png"), auto !important;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+.menu-btn {
+    position: fixed;
+    margin: 2em;
+    right: 0;
+    z-index: 20;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: none;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+i {
+    outline: none;
+    padding: 0.4em;
+    color: #fff;
+    cursor: none;
+}
+
+.row, .col-lg {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.col-lg {
+    height: 100vh;
+    backface-visibility: hidden;
+}
+
+.col-lg.overlay {
+    background: #2625ff;
+    position: absolute;
+    top: -100%;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+ul.show {
+    visibility: visible;
+    transition: 2s;
+}
+
+li {
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 50px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+li:not(:last-child) {
+    margin-right: 120px;
+}
+
+
+li:first-child:hover::before {
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    top: -180px;
+    left: -30px;
+    background: url(img-1.jpg);
+    transition: 1s;
+    animation: fade-in 2s ease-in-out;
+}
+
+li:nth-child(2):hover::before {
+    content: "";
+    z-index: -1;
+    width: 300px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    top: -180px;
+    left: -30px;
+    background: url(img-2.jpg);
+    transition: 1s;
+    animation: fade-in 2s ease-in-out;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        top: -160px;
+
+    }
+
+    50% {
+        opacity: 1;
+        top: -180px;
+
+    }
+
+    100% {
+        opacity: 1;
+        top: -180px;
+    }
+}
+
+@media(max-width: 900px){
+    li {
+        text-align: center;
+        display: block !important;
+        margin: 0 !important;
+        padding: 20px 0;
+    }
+    li:hover::before {
+        width: 0 !important;
+    }
+
+    .menu-btn {
+        margin: 1.4em;
+    }
+
+    .logo {
+        margin: 1.4em;
+    }
+}
+
+/* end of menu */
+
+/* hero section */
+
+.logo {
+    font-family: Poppins;
+    position: absolute;
+    margin: 2em;
+    left: 0;
+    z-index: 0;
+    font-size: 25px;
+}
+
+
+.tagline {
+    font-size: 100px;
+    position: absolute;
+    font-family: 'Abril Fatface', cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+@media(max-width: 900px) {
+    .tagline {
+        font-size: 30px;
+    }
+}
+  
+.project {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    display: flex;
+    font-family: Poppins; 
+    font-size: 20px;
+    cursor: url("cursor.png"), auto !important;
+}
+
+.type-right {
+    float: right;
+    text-decoration: underline;
+    color: #ebebeb;
+    font-family: "Larsseit";
+}
+
+.project p a:hover {
+    font-style: italic;
+    cursor: url("cursor.png"), auto !important;    
+}
+
+.type-left {
+    text-decoration: underline;
+    color: #ebebeb;
+    font-family: "Larssiet";
+}
+
+
+
+.project.one img {
+    width: 500px;
+    height: 700px;
+}
+
+.project.one p {
+    position: absolute;
+    top: 150%;
+    left: 38%;
+}
+
+
+.project.two img {
+    width: 500px;
+    height: 700px;
+    margin-left: auto;
+}
+
+.project.two p{
+    position: absolute;
+    top: 250%;
+    left: 25%;
+}
+
+.project.three img {
+    width: 500px;
+    height: 700px;
+}
+
+.project.three p {
+    position: absolute;
+    top: 350%;
+    left: 38%;
+}
+
+.project.four img {
+    width: 500px;
+    height: 700px;
+    margin-left: auto;
+}
+
+.project.four p{
+    position: absolute;
+    top: 450%;
+    left: 25%;
+}
+
+
+@media(max-width: 900px) {
+    .project.one img {
+        height: 350px;
+        width: 250px;
+    }
+
+    .project.two img {
+        height: 350px;
+        width: 250px;
+    }
+
+    .project.three img {
+        height: 350px;
+        width: 250px;
+    }
+
+    .project.four img {
+        height: 350px;
+        width: 250px;
+    }
+
+    .project p {
+        display: none;
+    }
+
+    
+}
