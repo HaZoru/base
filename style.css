@@ -357,6 +357,6 @@ li:nth-child(2):hover::before {
 
 @media(max-width: 900px){
     .text {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
