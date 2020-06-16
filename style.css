@@ -24,8 +24,15 @@ body {
 }
 
 .hero {
-    height: 100vh;
+    height: 0%;
     width: 100%;
+    
+}
+
+@media(max-width: 1200px) {
+    .hero {
+        height: 100%;
+    }
 }
 
 .menu-btn {
@@ -245,7 +252,7 @@ li:nth-child(2):hover::before {
 .project.one p {
     position: absolute;
     top: 150%;
-    left: 38%;
+    left: 25%;
 }
 
 
@@ -258,7 +265,7 @@ li:nth-child(2):hover::before {
 .project.two p{
     position: absolute;
     top: 250%;
-    left: 25%;
+    left: 38%;
 }
 
 .project.three img {
@@ -269,7 +276,7 @@ li:nth-child(2):hover::before {
 .project.three p {
     position: absolute;
     top: 350%;
-    left: 38%;
+    left: 25%;
 }
 
 .project.four img {
@@ -338,4 +345,12 @@ li:nth-child(2):hover::before {
     }
 
 
+}
+
+.text {
+    margin-top: 100px !important;
+    margin: 20px;
+    font-family: Poppins;
+    font-size: 25px;
+    cursor: url("cursor.png"), auto !important;
 }
