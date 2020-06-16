@@ -283,12 +283,20 @@ li:nth-child(2):hover::before {
     left: 25%;
 }
 
-.project img:hover {
+.project img:active {
     -webkit-transform:scale(1.1); /* Safari and Chrome */
     -moz-transform:scale(1.1); /* Firefox */
     -ms-transform:scale(1.1); /* IE 9 */
     -o-transform:scale(1.1); /* Opera */
     transform:scale(1.1);
+}
+
+.project img:hover {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+    transform:scale(1.05);
 }
 
 .project img {
