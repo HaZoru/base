@@ -163,8 +163,8 @@ li:nth-child(2):hover::before {
         margin: 1.4em;
     }
 
-		.col-lg {
-				height: 90vh;
+		.col-lg.overlay {
+				top: -110%;
 		}
 }
 
