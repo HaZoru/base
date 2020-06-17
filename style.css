@@ -220,7 +220,6 @@ li:nth-child(2):hover::before {
     width: 100%;
     height: 100%;
     margin-top: 100px;
-    display: flex;
     font-family: Poppins;
     font-size: 20px;
     cursor: url("cursor.png"), auto !important;
@@ -231,6 +230,7 @@ li:nth-child(2):hover::before {
     text-decoration: underline;
     color: #ebebeb;
     font-family: "Larsseit";
+    margin-right: 500px;
 }
 
 .project p a:hover {
@@ -251,23 +251,25 @@ li:nth-child(2):hover::before {
     height: 700px;
 }
 
-.project.one p {
-    position: absolute;
-    top: 150%;
-    left: 25%;
-}
+
 
 
 .project.two img {
     width: 500px;
     height: 700px;
     margin-left: auto;
+    display: flex;
+    order: 2;
 }
 
-.project.two p{
-    position: absolute;
-    top: 250%;
-    left: 38%;
+.txt{
+    position: relative;
+   
+}
+
+.text-1 {
+    top: 300px;
+    left: 200px;
 }
 
 .project.three img {
@@ -275,22 +277,22 @@ li:nth-child(2):hover::before {
     height: 700px;
 }
 
-.project.three p {
-    position: absolute;
-    top: 350%;
-    left: 25%;
+.text-2 {
+    top: 280px;
+    left: 400px;
 }
 
 .project.four img {
     width: 500px;
     height: 700px;
+    display: flex;
+    order: 2;
     margin-left: auto;
 }
 
-.project.four p{
-    position: absolute;
-    top: 450%;
-    left: 25%;
+.text-3 {
+    top: 300px;
+    left: 200px;
 }
 
 .project img:active {
