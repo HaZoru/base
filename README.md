@@ -1,1 +1,1 @@
-Author: [@AryaveerSR](https://github.com/HaZoru)
+Author: [@HaZoru](https://github.com/HaZoru)
