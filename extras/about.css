@@ -96,3 +96,7 @@ video,source {
 #button:hover {
 	color:#2625ff;
 }
+
+#video-prompt {
+	color: #000;
+}

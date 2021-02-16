@@ -13,7 +13,9 @@
         <p class="loading">Loading</p>
     </div>
 
-    <video width="800" height="720" autoplay="autoplay">
+    <button id="video-prompt" onclick="play()">Click here </button>
+
+    <video width="800" height="720" id="video">
         <source src="best vid ever.mp4" type="video/mp4" />
         
       </video>
@@ -26,17 +28,22 @@
 
 <script>
 
-
+video = document.getElementById('video');
 //loader
 window.addEventListener("load", function () {
 	const loader = document.querySelector(".loader");
 	loader.className += " hidden";
 
 });
+
+function play(){
+    video.play()
+}
 function hide(){
 document.getElementById('button').style.visibility = "hidden";
 document.getElementById('bob').style.visibility = "visible";
 }
+
 //loader end
 
 $(document).ready(function() {
@@ -56,6 +63,8 @@ function fade_out() {
 
 
 });
+
+
 
 </script>
 
