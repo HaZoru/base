@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Normal Webpage</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <div class="loader">
+        <p class="loading">Loading</p>
+    </div>
+
+    <video width="800" height="720" autoplay="autoplay">
+        <source src="best vid ever.mp4" type="video/mp4" />
+        
+      </video>
+
+      <p id="button" onclick="hide()">CLOSE</p>
+
+      <img src="sauce.gif" class="bob" id="bob"> 
+      
+</body>
+
+<script>
+
+
+//loader
+window.addEventListener("load", function () {
+	const loader = document.querySelector(".loader");
+	loader.className += " hidden";
+
+});
+function hide(){
+document.getElementById('button').style.visibility = "hidden";
+document.getElementById('bob').style.visibility = "visible";
+}
+//loader end
+
+$(document).ready(function() {
+
+// Hide close button
+$("#button").hide();
+
+// Show the close button 
+$("#button").delay(5000).fadeIn(500);
+
+//bob fade ;)
+setTimeout(fade_out, 52500);
+
+function fade_out() {
+  $("#bob").fadeOut().empty();
+}
+
+
+});
+
+</script>
+
+</html>
