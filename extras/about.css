@@ -98,5 +98,20 @@ video,source {
 }
 
 #video-prompt {
-	color: #000;
+	color: #fff;
+	z-index: 100;
+	position: absolute;
+	background: none;
+	left: 50%;
+	top: 50%;
+	border-width: 0;
+	outline:none;
+	font-weight: bold;
+	font-size: 30px;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+#video-prompt:hover {
+	color:#E01C1C;
 }

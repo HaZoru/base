@@ -13,10 +13,10 @@
         <p class="loading">Loading</p>
     </div>
 
-    <button id="video-prompt" onclick="play()">Click here </button>
+    <button id="video-prompt" onclick="play()">E N T E R</button>
 
     <video width="800" height="720" id="video">
-        <source src="best vid ever.mp4" type="video/mp4" />
+        <source src="best vid ever v2.mp4" type="video/mp4" />
         
       </video>
 
@@ -28,43 +28,36 @@
 
 <script>
 
-video = document.getElementById('video');
+
 //loader
 window.addEventListener("load", function () {
 	const loader = document.querySelector(".loader");
 	loader.className += " hidden";
 
 });
+//loader end
+
+video = document.getElementById('video');
+$("#button").hide();     // Hide close button
 
 function play(){
+    document.getElementById('video-prompt').style.visibility="hidden";
     video.play()
+// Show the close button 
+    $("#button").delay(5000).fadeIn(500);
+
+//bob fade ;)
+    setTimeout(fade_out, 52500);
+
+    function fade_out() {
+      $("#bob").fadeOut().empty();
+    }
 }
+
 function hide(){
 document.getElementById('button').style.visibility = "hidden";
 document.getElementById('bob').style.visibility = "visible";
 }
-
-//loader end
-
-$(document).ready(function() {
-
-// Hide close button
-$("#button").hide();
-
-// Show the close button 
-$("#button").delay(5000).fadeIn(500);
-
-//bob fade ;)
-setTimeout(fade_out, 52500);
-
-function fade_out() {
-  $("#bob").fadeOut().empty();
-}
-
-
-});
-
-
 
 </script>
 
