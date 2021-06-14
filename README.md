@@ -1,2 +1,2 @@
 Author: [@HaZoru](https://github.com/HaZoru)                                                                                                                       
-Hosted [here] (https://test-base.netlify.app/)
+Hosted [here](https://test-base.netlify.app/)
