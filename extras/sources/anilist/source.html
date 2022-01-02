@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sources</title>
+    <style>
+      html,
+      body {
+        background-color: #131313;
+        padding: 50px;
+        color: white;
+      }
+      @media only screen and (max-width: 540px) {
+        html,
+        body {
+          padding: 15px 0 0 10px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #ebe;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #007bff;
+      }
+      #prev {
+        display: none;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <p>
+      <a href="https://twitter.com/720ge/status/1197261746957770752?s=20"
+        >Avatar</a
+      >
+    </p>
+    <h2>Banner [ <a href="./why.png">./why.png</a> ]</h2>
+    <p>
+      1.
+      <a
+        href="https://i.pinimg.com/originals/0e/ed/a7/0eeda7a9ebe63da3cb4fd5a2aa8d17b9.jpg"
+        >pic</a
+      >
+    </p>
+    <br />
+    <br />
+    <hr />
+    <a href="#" id="show">show previous</a>
+
+    <div id="prev">
+      <div class="stare">
+        <h2><a href="./stare.png">~ ./stare.png</a></h2>
+        <i>from left to right</i>
+
+        <p>
+          1.
+          <a href="https://another.fandom.com/wiki/Reiko_Mikami">Reiko Mikami</a
+          >, Another — [<a
+            href="https://another.fandom.com/wiki/Reiko/Image_Gallery?file=Reikomanga.jpg"
+            >Image</a
+          >]
+        </p>
+        <p>
+          2.
+          <a href="https://anilist.co/manga/135677/Eisei-no-Kaori/"
+            >Eisei no Kaori </a
+          >[NSFW]
+        </p>
+        <p>
+          3.
+          <a
+            href="https://twitter.com/alternativeplx/status/1307158030287597569"
+            >Image</a
+          >
+        </p>
+        <p>
+          4.
+          <a href="https://shokugekinosoma.fandom.com/wiki/Rind%C5%8D_Kobayashi"
+            >Rindō Kobayashi</a
+          >, Shokugeki no Soma — [<a
+            href="https://www.deviantart.com/anarchywulf/art/Rindo-Kobayashi-598293748"
+            >Image</a
+          >]
+        </p>
+        <p>
+          5.
+          <a
+            href="https://anilist.co/manga/133002/Hirowareta-Onnanoko-to-Ojisan-no-Hanashi-/"
+            >Hirowareta Onnanoko to Oji-san no Hanashi </a
+          >[NSFW]
+        </p>
+        <p>
+          6. <a href="https://onepunchman.fandom.com/wiki/Fubuki">Fubuki</a>,
+          One Punch Man — [<a href="https://i.imgur.com/pSSA18E.jpeg">Image</a>]
+        </p>
+        <p>
+          7.
+          <a href="https://prison-school.fandom.com/wiki/Mari_Kurihara"
+            >Mari Kurihara</a
+          >, Prison School — [<a
+            href="https://i.pinimg.com/originals/3f/71/27/3f712738d9b28e63963b936da5eff31b.jpg"
+            >Image</a
+          >]
+        </p>
+        <p>
+          8.
+          <a href="https://kakegurui.fandom.com/wiki/Yumeko_Jabami"
+            >Yumeko Jabami</a
+          >, Kakegurui - Compulsive Gambler — [<a
+            href="https://www.pinterest.com/pin/842525042779763913/"
+            >Image</a
+          >]
+        </p>
+        <p>
+          9.
+          <a href="https://mochijun.fandom.com/wiki/Veronica_de_Sade"
+            >Veronica de Sade</a
+          >, The Case Study of Vanitas — [<a
+            href="https://www.pinterest.com/pin/809099889312895189/"
+            >Image</a
+          >]
+        </p>
+        <p>
+          10.
+          <a
+            href="https://i.pinimg.com/originals/2c/c0/ae/2cc0ae6732b34881181a9bfa81ce4251.jpg"
+            >Image</a
+          >
+        </p>
+        <p>
+          11.
+          <a
+            href="https://www.webtoons.com/en/challenge/deathcity/list?title_no=491528&webtoon-platform-redirect=true"
+            >DEATHCITY</a
+          >
+          — [<a
+            href="https://i.pinimg.com/564x/47/38/e8/4738e8243708c7402e032a7582bfbf9d.jpg"
+            >Image</a
+          >]
+        </p>
+        <p>
+          <a
+            href="https://www.amazon.co.jp/%E3%82%B0%E3%83%AA%E3%83%83%E3%83%89%E3%83%AD%E3%83%83%E3%82%AF%E7%B5%8C%E6%B8%88%E2%80%95%E2%80%95%E5%A4%9A%E3%81%99%E3%81%8E%E3%82%8B%E6%89%80%E6%9C%89%E6%A8%A9%E3%81%8C%E5%B8%82%E5%A0%B4%E3%82%92%E3%81%A4%E3%81%B6%E3%81%99-%E3%83%9E%E3%82%A4%E3%82%B1%E3%83%AB%E3%83%BB%E3%83%98%E3%83%A9%E3%83%BC/dp/4750515639"
+            >Background</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const showButton = document.getElementById("show");
+    const prev = document.getElementById("prev");
+
+    showButton.addEventListener("click", () => {
+      showButton.style.display = "none";
+      prev.style.display = "block";
+    });
+
+  </script>
+</html>
